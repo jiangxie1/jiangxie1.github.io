@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>freetranslation</title>title
+  </head>
+  <body>
+    <h1>welcometotranslate</h1>
+    <iframe
+      src="https://translate.google.com/?sl=auto&tl=en&op=translate"
+      width="100%"
+      height="400px"
+    ></</iframe> 
+    <input type="text" id="textToSpeak"placeholder="enter English">
+    <button onclick="speak()">pronunciation</button>
+    <script>
+    function speak(){
+      const text = document.retElementById('textToSpeak').value;
+      const utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    }
+    </script>
+  </body>
+  </html>
